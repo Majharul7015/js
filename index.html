@@ -1,0 +1,268 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- css links -->
+   <link rel="stylesheet" href="css/bootstrap.css">
+   <link rel="stylesheet" href="css/style.css">
+   <link rel="stylesheet" href="css/media.css">
+
+    <title>Hello, world!</title>
+  </head>
+  <body>
+      <button type="button" class="btn btn-primary" onclick="turnon()" >Turn on</button>
+      <img src="images/pic_bulboff.gif" id="blb" alt="">
+    <button type="button" class="btn btn-secondary" onclick="turnoff()">Turn off</button>
+
+    <script>
+       function turnon()
+       {
+         document.getElementById("blb").src="images/pic_bulbon.gif";
+       }
+        function turnoff()
+       {
+         document.getElementById("blb").src="images/pic_bulboff.gif";
+       }
+
+     </script>
+
+
+    <p id="fnt">Changing the font size</p>
+    <button type="button" onclick="myfunc()">Click here</button>
+    <script>
+      function myfunc(){
+        document.getElementById("fnt").style.fontSize="28px";
+      }
+
+    </script>
+     <h4 class="text-center bg-primary">1. Events</h4>
+    <button class="btn btn-danger" type="button"
+    onclick="myOne()">
+    Click here for Date and Time.</button>
+    <p id="demo"></p>
+    <script>
+      function myOne(){
+        document.getElementById("demo").innerHTML=Date();
+      }
+    </script>
+      
+    <h4 class="text-center bg-primary">2. For changing HTML content</h4>
+    <button class="btn btn-primary" type="button" onclick="mySecond()">
+      Click Me
+    </button>
+    <p id="dimo"></p>
+    <script>
+      function mySecond(){
+        document.getElementById("dimo").innerHTML="This is my Practising part";
+      }
+    </script>
+
+    <h4 class="text-center bg-primary">3. Statement property</h4>
+    <p id="add"></p>
+    <script>
+      var x, y, z;
+      x=5;
+      y=10;
+      z=x+y;
+      document.getElementById("add").innerHTML=
+        "The adding value of z is " + z +".";
+    </script>
+
+    <h4 class="text-center bg-primary">4. String property</h4>
+    <p id="pro"></p>
+    <script>
+    document.getElementById("pro").innerHTML = 'Shikhbe Sobai-71';
+    </script>
+
+    <p id="emo"></p>
+    <script>
+    document.getElementById("emo").innerHTML = 10.50;
+    </script>
+
+    <h4 class="text-center bg-primary">5. Comment</h4>
+      <p>For single line we use  //</p>
+      <p>For multiple line we use  */</p>
+    
+    <h4 class="text-center bg-primary">6. Variables</h4>
+      <p id="price"></p>
+       <script>
+         var price1=105;
+         var price2=198;
+         var total=price1+price2;
+         document.getElementById("price").innerHTML=
+         "The total ammount is: " + total;
+       </script>
+
+        <p id="minus"></p>
+        <script>
+          var a, b, c;
+          a=12;
+          b=5;
+          c=a-b;
+          document.getElementById("minus").innerHTML=
+            "The value of c is " + c +".";
+        </script>
+
+    <h4 class="text-center bg-primary">7. Multiplying</h4>
+      <p id="multiply"></p>
+      <script>
+        var s = 5;
+        var d = 8;
+        var f = s * d;
+        document.getElementById("multiply").innerHTML = f;
+      </script>
+
+    <h4 class="text-center bg-primary">8. Arithmatic</h4>
+      <p id="arith"></p>
+      <script>
+        var a = 9;
+        var e =(18 + 6)*a;
+        document.getElementById("arith").innerHTML= e;
+      </script>
+
+    <h4 class="text-center bg-primary">9. Data Type</h4>
+      <p id="data"></p>
+      <script>
+        var g = 4 + 23 + "Apple";
+        document.getElementById("data").innerHTML= g;
+      </script>
+  
+    <h4 class="text-center bg-primary">10. Functions</h4>
+
+      <p>This is a function which performs a calculation and returns the result</p>
+      <p id="fnctn"></p>
+      <script>
+        var x= myValue (12, 14);
+        document.getElementById("fnctn").innerHTML= x;
+        function myValue(a, b){
+          return a + b;
+        }
+      </script>
+
+    <h4 class="text-center bg-primary">11. Objects</h4>
+      <p id="objct"></p>
+      <script>
+        var person ={
+          firstName: "Charles",
+          lastName: "Babez",
+          age: 40,
+        }
+        document.getElementById("objct").innerHTML= person.firstName + person.lastName + " is " + person.age + "years old. "
+      </script>
+
+    <h4 class="text-center bg-primary">12. String Methods</h4>
+    
+        <p>Both indexOf(), and lastIndexOf() return -1 if the text is not found:</p>
+
+        <p id="strng"></p>
+
+        <script>
+        var str = "Please locate where 'locate' occurs!";
+        var pos = str.indexOf("John");
+        document.getElementById("strng").innerHTML = pos;
+        </script>
+
+    <h4 class="text-center bg-primary">13. Numbers</h4>
+            
+        <p id="nmbr"></p>
+
+        <script>
+        var x = 151e9;
+        var y = 163e-9;
+        document.getElementById("nmbr").innerHTML = x + "<br>" + y;
+        </script>
+
+    <h4 class="text-center bg-primary">14. Numbers  Methods</h4>
+    
+      <p>An optional parameter defines the number of digits behind the decimal point.</p>
+
+      <p id="mthds"></p>
+
+      <script>
+      var x = 3.536;
+      document.getElementById("mthds").innerHTML =
+        x.toExponential(1) + "<br>" + 
+        x.toExponential(3) + "<br>" + 
+        x.toExponential(5) + "<br>" + 
+        x.toExponential(8);
+      </script>
+
+    <h4 class="text-center bg-primary">15. Array</h4>
+    
+      <p id="ary"></p>
+      <script>
+        var color =[
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green",
+        ]
+        document.getElementById("ary").innerHTML= color;
+      </script>
+
+    <h4 class="text-center bg-primary">16. Array Method</h4>
+    
+      <p id="arry"></p>
+      <script>
+        var color =[
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green",
+        ]
+        document.getElementById("arry").innerHTML= color.join(" * ");
+      </script>
+
+    <h4 class="text-center bg-primary">17. Array Shot</h4>
+    
+      <button onclick="myarray()">Try it</button>
+
+      <p id="arysht"></p>
+
+      <script>
+      // Create and display an array:
+       var color =[
+        "Red",
+        "Blue",
+        "Yellow",
+        "Green",
+        ]
+      document.getElementById("arysht").innerHTML = color;
+
+      function myarray() {
+        // First sort the array
+        color.sort();
+        // Then reverse it
+        color.reverse();
+        document.getElementById("arysht").innerHTML = color;
+      }
+      </script>
+
+    <h4 class="text-center bg-primary">18. Array Iteration</h4>
+    
+      <p id="aryit"></p>
+
+      <script>
+      var txt = "";
+      var numbers = [49, 45, 25 , 96, 55];
+      numbers.forEach(myit);
+      document.getElementById("aryit").innerHTML = txt;
+
+      function myit(value, index, array) {
+        txt = txt + value + "<br>"; 
+      }
+      </script>
+ bg-primary
+     <script>
+       window.alert("subscribe");
+     </script>
+    <!-- js links -->
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+      <script  src="js/script.js"></script>
+  </body>
+</html>
